@@ -67,9 +67,12 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
-  var flipCount = {"heads": 0, "tails" : 0}
+  var flipCount = {}
   for(var i=0; i<array.length; i++){
     var flipResult = array[i]
+    if(!flipCount[flipResult]){
+      flipCount[flipResult] = 0
+    }
     flipCount[flipResult] +=1
   }
   return flipCount
