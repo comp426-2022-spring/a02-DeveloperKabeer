@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/comp426-2022-spring/a02-DeveloperKabeer#readme",
   "dependencies": {
-    "minimalist": "^1.0.0"
+    "minimalist": "^1.0.0",
+    "minimist": "^1.2.6"
   }
 }

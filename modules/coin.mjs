@@ -67,9 +67,9 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
-  flipCount = {"heads": 0, "tails" : 0}
+  var flipCount = {"heads": 0, "tails" : 0}
   for(var i=0; i<array.length; i++){
-    flipResult = array[i]
+    var flipResult = array[i]
     flipCount[flipResult] +=1
   }
   return flipCount
@@ -89,7 +89,7 @@ export function countFlips(array) {
 
 export function flipACoin(call) {
   var flipResult = coinFlip()
-  if (flipResult == call){
+  if (flipResult != call){
     return{call: call, flip: flipResult, result: "lose"}
   }else{
     return{call:call, flip:flipResult, result:"win"}
