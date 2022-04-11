@@ -6,7 +6,6 @@ const call = argv["call"] || "error"
 if(call != "heads" && call != "tails"){
     console.log("Error: no input.")
     console.log("Usage: node guess-flip --call=[heads|tails]")
-    process.exit(1)
 }
 var result = flipACoin(call) 
 console.log(result)
