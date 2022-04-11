@@ -4,7 +4,8 @@ const argv = minimist(process.argv.slice(2))
 
 const call = argv["call"] || "error"
 if(call != "heads" && call != "tails"){
-    console.error("bad input")
+    console.log("Error: no input.")
+    console.log("Usage: node guess-flip --call=[heads|tails]")
     process.exit(1)
 }
 var result = flipACoin(call) 
